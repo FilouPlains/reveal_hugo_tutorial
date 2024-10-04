@@ -1,0 +1,11 @@
+languageCode = "en-us"
+title = "tutorial"
+theme = ["reveal-hugo"]
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[outputFormats.Reveal]
+baseName = "index"
+mediaType = "text/html"
+isHTML = true
