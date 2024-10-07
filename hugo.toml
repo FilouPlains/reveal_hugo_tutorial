@@ -9,3 +9,24 @@ unsafe = true
 baseName = "index"
 mediaType = "text/html"
 isHTML = true
+
+[params.reveal_hugo]
+hash = true
+slide_number = true
+width = 1920
+height = 1080
+chalkboard = { theme = "whiteboard" }
+customcontrols = { controls = [ { icon = "<i class=\"fa fa-pen-square\"></i>", title = "Toggle chalkboard(B)", action = "RevealChalkboard.toggleChalkboard();" }, { icon = "<i class=\"fa fa-pen\"></i>", title = "Toggle notes canvas (C)", action = "RevealChalkboard.toggleNotesCanvas();" } ] }
+
+[markup.highlight]
+codeFences = false
+
+[[params.reveal_hugo.plugins]]
+name = "RevealChalkboard"
+source = "reveal.js-plugins/chalkboard/plugin.js"
+css = "reveal.js-plugins/chalkboard/style.css"
+
+[[params.reveal_hugo.plugins]]
+name = "RevealCustomControls"
+source = "reveal.js-plugins/customcontrols/plugin.js"
+css = "reveal.js-plugins/customcontrols/style.css"
