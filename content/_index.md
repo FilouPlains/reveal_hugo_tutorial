@@ -7,11 +7,6 @@ theme = "white"
 highlight_theme = "vs"
 +++
 
-<!-- Font-Awesome setup! -->
-<script src="/Font-Awesome/js/all.js"></script>
-<link href="/Font-Awesome/css/all.css" rel="stylesheet">
-<!-- Font-Awesome setup! -->
-
 # Time to start the tutorial!
 
 This is my first slide.
@@ -87,7 +82,8 @@ This slide has a background image.
 {{% note %}}
 
 -   Wait, you can see this, don't you…
-    {{% /note %}}
+
+{{% /note %}}
 
 ---
 
@@ -103,3 +99,11 @@ This slide has a background image.
 |     6f5f     |     2346     | Still nothing…      |
 |     d6d8     |      44      | Ha wait!            |
 |     8aze     |     789      | Not, still nothing… |
+
+---
+
+<div>
+
+# Toto
+
+</div>
