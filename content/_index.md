@@ -5,6 +5,7 @@ outputs = ["Reveal"]
 [reveal_hugo]
 theme = "white"
 highlight_theme = "vs"
+custom_theme = "content/index/style.css"
 +++
 
 # Time to start the tutorial!
@@ -19,6 +20,25 @@ This is my first slide.
 
 ```python
 def toto() -> str:
+    """A function that have no purpose.
+
+    Return
+    ------
+    `str`
+        I mean, do I really have to explain?
+    """
+    return "WAHOU!"
+```
+
+```python{1|2-8|}
+def toto() -> str:
+    """A function that have no purpose.
+
+    Return
+    ------
+    `str`
+        I mean, do I really have to explain?
+    """
     return "WAHOU!"
 ```
 
@@ -102,8 +122,24 @@ This slide has a background image.
 
 ---
 
-<div>
+<div class="grid">
 
-# Toto
+- Toto
+- Tata
+
+1. Toto
+2. Tata
 
 </div>
+
+---
+
+## Interactive plot \\(xOx)/ {{% math "E=mc^2" /%}} 
+
+<iframe src="/content/index/plot/plot.html" width="100%" height="800px"></iframe>
+
+---
+
+# That is what you were all waiting for >:D
+
+<iframe src="/content/index/molstar/1jli/molstar.html" width="100%" height="800px"></iframe>

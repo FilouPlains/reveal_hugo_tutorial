@@ -1,0 +1,46 @@
+<head>
+    <!-- MOLSTAR inclusion -->
+    <script src="/module/molstar/molstar.js"></script>
+    <link href="/module/molstar/molstar.css" rel="stylesheet" />
+    <!-- MOLSTAR inclusion -->
+</head>
+
+<body>
+    <div id="app-id" class="molstar_app"></div>
+
+    <script type="text/javascript">
+        let result = molstar.Viewer.create("app-id", {
+            emdbProvider: "rcsb",
+            layoutIsExpanded: true,
+            layoutShowControls: false,
+            layoutShowLeftPanel: false,
+            layoutShowLog: false,
+            layoutShowRemoteState: false,
+            layoutShowSequence: false,
+            pdbProvider: "rcsb",
+            viewportShowAnimation: false,
+            viewportShowControls: false,
+            viewportShowExpand: false,
+            viewportShowSelectionMode: false,
+            viewportShowSettings: false,
+        }).then((viewer) => {
+            viewer.loadSnapshotFromUrl((url = "structure.molx"), "molx");
+        });
+    </script>
+</body>
+
+<style>
+    div.molstar_app {
+        width: 100%;
+        height: 800px;
+    }
+
+    div.msp-plugin,
+    div.msp-plugin div.msp-viewport {
+        background-color: #0000;
+    }
+
+    canvas {
+        background: none !important;
+    }
+</style>

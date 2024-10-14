@@ -1,0 +1,28 @@
+@import "/reveal-js/dist/theme/white.css";
+
+:root {
+    --r-main-font: "Roboto Light";
+    --r-heading-font: "Roboto Black";
+}
+
+div.reveal strong,
+div.reveal b div.reveal th {
+    font-family: var(--r-heading-font);
+}
+
+.slide-background {
+    background-image: linear-gradient(180deg, #fff 50%, #afafaf 100%);
+}
+
+div.reveal table td,
+div.reveal table th {
+    border: none;
+}
+
+div.reveal table th {
+    background-color: #00000055;
+}
+
+div.reveal table tr:nth-child(even) {
+    background-color: #00000022;
+}
