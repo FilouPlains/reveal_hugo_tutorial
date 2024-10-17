@@ -10,3 +10,6 @@
 [submodule "static/plotly.js"]
     path = static/module/plotly.js
     url = https://github.com/plotly/plotly.js.git
+[submodule "static/reveal.js-extrernal-code"]
+    path = static/module/reveal.js-external-code
+    url = https://github.com/dafrenchyman/reveal.js-extrernal-code.git

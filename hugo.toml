@@ -17,9 +17,15 @@ width = 1920
 height = 1080
 chalkboard = { theme = "whiteboard" }
 customcontrols = { controls = [ { icon = "<i class=\"fa fa-pen-square\"></i>", title = "Toggle chalkboard(B)", action = "RevealChalkboard.toggleChalkboard();" }, { icon = "<i class=\"fa fa-pen\"></i>", title = "Toggle notes canvas (C)", action = "RevealChalkboard.toggleNotesCanvas();" } ] }
+mathjax_cdn = "toto"
+
 
 [markup.highlight]
 codeFences = false
+
+[markup.goldmark.parser.attribute]
+title = true
+block = true
 
 [[params.reveal_hugo.plugins]]
 name = "RevealChalkboard"
@@ -30,3 +36,11 @@ css = "module/reveal.js-plugins/chalkboard/style.css"
 name = "RevealCustomControls"
 source = "module/reveal.js-plugins/customcontrols/plugin.js"
 css = "module/reveal.js-plugins/customcontrols/style.css"
+
+[[params.reveal_hugo.plugins]]
+name = "Externalcode"
+source = "module/reveal.js-external-code/externalcode.js"
+
+[[params.reveal_hugo.plugins]]
+name = "RevealHighlight"
+source = "reveal-js/plugin/highlight/highlight.js"

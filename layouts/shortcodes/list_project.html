@@ -1,0 +1,11 @@
+{{ range readDir "content/" }}
+    {{ if (findRE "." .Name) }}
+        {{ if ne .Name "_index.md"  }}
+            <section>
+                <a href="/{{ .Name }}/index.html">
+                    <h1 style="color:var(--r-link-color);">{{ .Name }}/index.html</h1>
+                </a>
+            </section>
+        {{ end }}
+    {{ end }}
+{{ end }}
