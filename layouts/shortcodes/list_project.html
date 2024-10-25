@@ -1,11 +1,14 @@
 {{ range readDir "content/" }}
     {{ if (findRE "." .Name) }}
         {{ if ne .Name "_index.md"  }}
-            <section>
-                <a href="/{{ .Name }}/index.html">
-                    <h1 style="color:var(--r-link-color);">{{ .Name }}/index.html</h1>
-                </a>
-            </section>
+<section>
+  <a href="/{{ .Name }}/index.html">
+    <h1 style="color:var(--r-link-color);">{{ .Name }}/index.html</h1>
+
+  <iframe src="/{{ .Name }}/index.html" width="100%" height="800em"
+    style="border: 5pt solid black;border-radius: 1em;"></iframe>
+  </a>
+</section>
         {{ end }}
     {{ end }}
 {{ end }}

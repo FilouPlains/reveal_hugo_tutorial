@@ -131,12 +131,14 @@ This slide has a background image.
 
 # That is what you were all waiting for >:D
 
+<!-- Add style, class and id attributes for HTML -->
 <iframe src="./molstar/1jli/molstar.html" width="100%" height="800px"></iframe>
 
 ---
 
 # Some external code 🤯
 
+<!-- class, data-code and optionnal data-line-numbers -->
 <pre>
     <code class="language-py" data-code="./plot/script.py" data-line-numbers></code>
 </pre>
