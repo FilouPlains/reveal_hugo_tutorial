@@ -13,6 +13,13 @@ This is my first slide.
 
 ---
 
+# QR code 
+{{% qr_code link="https://www.google.com" %}}
+
+Beautiful, indeed!
+
+---
+
 # Want to see some Python code?
 
 ## Of course you do 👀

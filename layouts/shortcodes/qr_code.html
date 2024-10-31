@@ -1,0 +1,29 @@
+{{ with $.Page.Scratch.Get "qr_code_counter" }}
+  {{ $.Page.Scratch.Set "qr_code_counter" (add . 1) }}
+{{ else }}
+  {{ $.Page.Scratch.Set "qr_code_counter" 1 }}
+{{ end }}
+
+{{ $qr_code_counter := $.Page.Scratch.Get "counter"}}
+
+{{/* Defining some default values */}}
+{{ $size := .Get "size" | default "360" }}
+{{ $foreground := .Get "foreground" | default "#000" }}
+{{ $background := .Get "background" | default "#FFF0" }}
+
+<div id="qr_code_{{ $qr_code_counter  }}" style="padding-left: calc(50% - {{ $size }}px / 2);"></div>
+
+
+
+<script type="text/javascript">
+  new QRCode(
+      document.getElementById("qr_code_{{ $qr_code_counter  }}"),
+      {
+          text: {{ .Get "link" }},
+          width: {{ $size }},
+          height: {{ $size }},
+          colorDark: {{ $foreground }},
+          colorLight: {{ $background }},
+      }
+  )
+</script>

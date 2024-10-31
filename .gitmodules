@@ -13,3 +13,6 @@
 [submodule "static/reveal.js-extrernal-code"]
     path = static/module/reveal.js-external-code
     url = https://github.com/dafrenchyman/reveal.js-extrernal-code.git
+[submodule "static/module/qrcodejs"]
+	path = static/module/qrcodejs
+	url = https://github.com/davidshimjs/qrcodejs
