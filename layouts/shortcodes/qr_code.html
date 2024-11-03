@@ -1,3 +1,14 @@
+{{/* Defining some default values */}}
+{{/* The size of the QRCode. Default is 360. */}}
+{{ $size := .Get "size" | default "360" }}
+
+{{/* The QRCode foreground. Default is black. */}}
+{{ $foreground := .Get "foreground" | default "#000" }}
+
+{{/* The QRCode background. Default is transparent. */}}
+{{ $background := .Get "background" | default "#FFF0" }}
+
+
 {{ with $.Page.Scratch.Get "qr_code_counter" }}
   {{ $.Page.Scratch.Set "qr_code_counter" (add . 1) }}
 {{ else }}
@@ -6,14 +17,7 @@
 
 {{ $qr_code_counter := $.Page.Scratch.Get "counter"}}
 
-{{/* Defining some default values */}}
-{{ $size := .Get "size" | default "360" }}
-{{ $foreground := .Get "foreground" | default "#000" }}
-{{ $background := .Get "background" | default "#FFF0" }}
-
 <div id="qr_code_{{ $qr_code_counter  }}" style="padding-left: calc(50% - {{ $size }}px / 2);"></div>
-
-
 
 <script type="text/javascript">
   new QRCode(

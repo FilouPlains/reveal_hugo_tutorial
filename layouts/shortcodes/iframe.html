@@ -1,0 +1,29 @@
+{{/* Defining some default values */}}
+{{/* The path to the file to show. Default is nothing.  */}}
+{{ $src := .Get "src" | default "" }}
+
+{{/* The width. Default is 100%. */}}
+{{ $width := .Get "width" | default "100%" }}
+
+{{/* The height. Default is 800px. */}}
+{{ $height := .Get "height" | default "800px" }}
+
+{{/* The class to apply to the displayed code. Default is nothing. */}}
+{{ $class := .Get "class" | default "" }}
+
+{{ if ne $width "" }}
+  {{ $width = printf "width=\"%s\"" $width }}
+{{ end }}
+
+{{ if ne $height "" }}
+  {{ $height = printf "height=\"%s\"" $height }}
+{{ end }}
+
+{{ if ne $class "" }}
+  {{ $class = printf "class=\"%s\"" $class }}
+{{ end }}
+
+<iframe src="{{ $src }}"
+    {{ $width | safeHTMLAttr }}
+    {{ $height | safeHTMLAttr }}
+    {{ $class | safeHTMLAttr }}></iframe>

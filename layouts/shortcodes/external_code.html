@@ -1,0 +1,33 @@
+{{/* Defining some default values */}}
+{{/* Set true to show line, false to not to. Default is true. */}}
+{{ $show_line := .Get "show_line" | default true }}
+
+{{/* The path to the file to show. Default is nothing.  */}}
+{{ $src := .Get "src" | default "" }}
+
+{{/* The language, typically enter the file extension. Default is nothing. */}}
+{{ $language := .Get "language" | default "" }}
+
+{{/* The class to apply to the displayed code. Default is nothing. */}}
+{{ $class := .Get "class" | default "" }}
+
+{{ if eq $show_line true }}
+  {{ $show_line = "data-line-numbers" }}
+{{ else }}
+  {{ $show_line = ""  }}
+{{ end }}
+
+{{ $set_class := printf "%s%s" $class $language }}
+
+{{ if ne $set_class "" }}
+  {{ if ne $language "" }}
+    {{ $language = printf "language-%s" $language  }}
+  {{ end }}
+
+  {{ $set_class = printf "class=\"%s %s\"" $class $language }}
+{{ end }}
+
+<!-- class, data-code and optionnal data-line-numbers -->
+<pre>
+    <code {{ $set_class | safeHTMLAttr }} data-code="{{ $src }}" {{ $show_line | safeHTMLAttr}}></code>
+</pre>

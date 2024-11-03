@@ -4,7 +4,7 @@ outputs = ["Reveal"]
 
 [reveal_hugo]
 highlight_theme = "vs"
-custom_theme = "tutorial/style.css"
+custom_theme = "/tutorial/style.css"
 +++
 
 # Time to start the tutorial!
@@ -104,7 +104,7 @@ This slide has a background image.
 
 # Iframe too! 😏
 
-<iframe src="https://highlightjs.org/demo" width="100%" height="500cm"></iframe>
+{{% iframe src="https://highlightjs.org/demo" width="100%" height="500cm" %}}
 
 ---
 
@@ -132,20 +132,17 @@ This slide has a background image.
 
 ## Interactive plot \\(xOx)/ {{% math "E=mc^2" /%}} 
 
-<iframe src="./plot/plot.html" width="100%" height="800px"></iframe>
+{{ iframe src="./plot/plot.html" width="100%" height="800px" }}
 
 ---
 
 # That is what you were all waiting for >:D
 
 <!-- Add style, class and id attributes for HTML -->
-<iframe src="./molstar/1jli/molstar.html" width="100%" height="800px"></iframe>
+{{% iframe src="./molstar/1jli/molstar.html" width="100%" height="800px" %}}
 
 ---
 
 # Some external code 🤯
 
-<!-- class, data-code and optionnal data-line-numbers -->
-<pre>
-    <code class="language-py" data-code="./plot/script.py" data-line-numbers></code>
-</pre>
+{{% external_code language="py" src="./plot/script.py" class="toto" %}}
