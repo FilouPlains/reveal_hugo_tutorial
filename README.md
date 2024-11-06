@@ -12,19 +12,19 @@
 
 ## 🌳 Module used
 
-### 📽 Classical
-
 Here is a list of the module used to make this tutorial. By cloning this repository,
 you will not need to install them all.
 
-- [Hugo](https://gohugo.io/)
-- [reveal.js](https://revealjs.com/)
-- [reveal-hugo](https://github.com/joshed-io/reveal-hugo)
-- [Molstar](https://molstar.org/)
-- [qrcodejs](https://davidshimjs.github.io/qrcodejs/)
-- [plotly.js](https://plotly.com/)
+-   [Hugo](https://gohugo.io/)
+-   [reveal.js](https://revealjs.com/)
+-   [reveal-hugo](https://github.com/joshed-io/reveal-hugo)
+-   [Molstar](https://molstar.org/)
+-   [qrcodejs](https://davidshimjs.github.io/qrcodejs/)
+-   [plotly.js](https://plotly.com/)
 
 ## 🌐 Installation
+
+### 📽 Classical
 
 First, clone this repository:
 
