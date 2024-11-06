@@ -15,13 +15,13 @@
   {{ $.Page.Scratch.Set "qr_code_counter" 1 }}
 {{ end }}
 
-{{ $qr_code_counter := $.Page.Scratch.Get "counter"}}
+{{ $qr_code_counter := $.Page.Scratch.Get "qr_code_counter" }}
 
-<div id="qr_code_{{ $qr_code_counter  }}" style="padding-left: calc(50% - {{ $size }}px / 2);"></div>
+<div id="qr_code_{{ $qr_code_counter | safeHTMLAttr }}" style="padding-left: calc(50% - {{ $size }}px / 2);"></div>
 
 <script type="text/javascript">
   new QRCode(
-      document.getElementById("qr_code_{{ $qr_code_counter  }}"),
+      document.getElementById("qr_code_{{ $qr_code_counter | safeJS }}"),
       {
           text: {{ .Get "link" }},
           width: {{ $size }},

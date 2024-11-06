@@ -118,7 +118,7 @@ This slide has a background image.
 
 ---
 
-<div class="grid">
+{{% grid %}}
 
 - Toto
 - Tata
@@ -126,13 +126,21 @@ This slide has a background image.
 1. Toto
 2. Tata
 
-</div>
+{{% /grid %}}
+
+- Toto
+- Tata
+
+1. Titi
+2. Je sais où est-ce que tu habites…
+
+Comment vas-tu?
 
 ---
 
 ## Interactive plot \\(xOx)/ {{% math "E=mc^2" /%}} 
 
-{{ iframe src="./plot/plot.html" width="100%" height="800px" }}
+{{% iframe src="./plot/plot.html" width="100%" height="800px" %}}
 
 ---
 
