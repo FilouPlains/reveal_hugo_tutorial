@@ -14,5 +14,8 @@
     path = static/module/reveal.js-external-code
     url = https://github.com/dafrenchyman/reveal.js-extrernal-code.git
 [submodule "static/module/qrcodejs"]
-	path = static/module/qrcodejs
-	url = https://github.com/davidshimjs/qrcodejs
+    path = static/module/qrcodejs
+    url = https://github.com/davidshimjs/qrcodejs
+[submodule "static/module/plantuml-core"]
+	path = static/module/plantuml-core
+	url = https://github.com/plantuml/plantuml-core.git
