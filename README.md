@@ -43,7 +43,7 @@ sudo apt install hugo
 You are now technically abble to launch the presentation! To do so:
 
 ```bash
-hugo server --renderToDisk -p 1313
+hugo server -p 1313
 ```
 
 Then go, using your favorite web navigator (like Mozilla Firefox 😉) on this next
