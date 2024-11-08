@@ -1,0 +1,6 @@
+name: reveal-hugo
+channels:
+    - conda-forge
+dependencies:
+    - plotly=5.24.1
+    - hugo=0.123.7
