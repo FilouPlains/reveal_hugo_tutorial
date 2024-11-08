@@ -33,33 +33,20 @@ git clone --recurse-submodules -j8 https://github.com/FilouPlains/reveal_hugo_tu
 cd reveal_hugo_tutorial
 ```
 
-Then, install `Hugo`. [Check their website for a list of how to do it.](https://gohugo.io/installation/linux/#package-managers)
-Next is an example with Ubuntu:
+Then, using conda, install `Hugo` and `Plotly` like this:
 
 ```bash
-sudo apt install hugo
+conda env create -f env/environment.yml
 ```
 
 You are now technically abble to launch the presentation! To do so:
 
 ```bash
-hugo server -p 1313
+hugo server --renderStaticToDisk -p 1313
 ```
 
-Then go, using your favorite web navigator (like Mozilla Firefox 😉) on this next
-URL: [http://localhost:1313/](http://localhost:1313/). Then, in order to fully be
-abble to use the tutorial, you will need to also [download Plotly](https://plotly.com/python/getting-started/#installation).
-To do so, use weither [`pip`](https://pypi.org/):
-
-```bash
-pip install plotly
-```
-
-Or [`conda`](https://anaconda.org/):
-
-```bash
-conda install conda-forge::plotly
-```
+To finish go, using your favorite web navigator (like Mozilla Firefox 😉) on this next
+URL to see the “presentation hub”: [http://localhost:1313/](http://localhost:1313/).
 
 ### 📹 Nix
 
