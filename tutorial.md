@@ -99,7 +99,7 @@ An example of how to set `reveal.js` plugins. You give a name, which can be foun
 in the JavaScript of the plugin. [Here, for the chalkboard plugin](https://github.com/rajgoel/reveal.js-plugins/blob/master/chalkboard/plugin.js#L19).
 Then, you give the path to the module CSS and JavaScript. And _voilà_!
 
-## Slide header
+### Slide header
 
 You can give extra-parameters to the slide header. By doing to, you can change theme
 for a specific presentation.
