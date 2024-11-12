@@ -24,7 +24,7 @@ you will not need to install them all.
 
 ## 🌐 Installation
 
-### 📽 Classical
+### 🐍 Using conda
 
 First, clone this repository:
 
@@ -55,9 +55,10 @@ hugo server --renderStaticToDisk -p 1313
 To finish, go, using your favorite web navigator (like Mozilla Firefox 😉) on this
 next URL to see the “presentation hub”: [http://localhost:1313/](http://localhost:1313/).
 
-### 📹 Nix
+### 📹 Using Nix
 
-#### _🔸 Installing Nix for multi-user_
+<details>
+<summary><h4><em>🔸 Installing Nix for multi-user</em></h4></summary>
 
 Download [Nix](https://nixos.org/download/) using this command:
 
@@ -72,14 +73,16 @@ Next, enable `flakes`. To do so, add this:
 experimental-features = nix-command flakes
 ```
 
-To the `/etc/nix/nix.conf`. One example to do so is to `cat` the file to check
+To the `/etc/nix/nix.conf` file. One example to do so is to `cat` the file to check
 if the line is not present. Then, if so, do:
 
 ```bash
 sudo echo "experimental-features = nix-command flakes" >> /etc/nix/nix.conf
 ```
+</details>
 
-#### _🔸 Installing nix for single user_
+<details>
+<summary><h4><em>🔸 Installing nix for single user</em></h4></summary>
 
 Download [Nix](https://nixos.org/download/) using this command:
 
@@ -94,7 +97,7 @@ Next, enable `flakes`. To do so, add this:
 experimental-features = nix-command flakes
 ```
 
-To the `~/.config/nix/nix.conf`. One example to do so is to `cat` the file to check
+To the `~/.config/nix/nix.conf` file. One example to do so is to `cat` the file to check
 if the line is not present. Then, if so, do:
 
 ```bash
@@ -107,6 +110,7 @@ echo "experimental-features = nix-command flakes" >> ~/.config/nix/nix.conf
 > ```bash
 > mkdir ~/.config/nix
 > ```
+</details>
 
 #### _🔸 Installing and using `reveal_hugo_tutorial`_
 
