@@ -1,4 +1,10 @@
-# `reveal.js`
+<div align="center">
+
+# Tutorial to use `reveal-hugo` to make interactive slides using Markdown
+
+</div>
+
+## `reveal.js`
 
 [Link: https://revealjs.com/](https://revealjs.com/)
 
@@ -38,7 +44,7 @@ You still need HTML… It makes the syntax quite heavy to read, and not pratical
 use. It is better, using [`Emmet`](https://docs.emmet.io/), to make only HTML than
 to switch time to time in Markdown… I need something more simple!
 
-# `reveal-hugo`
+## `reveal-hugo`
 
 [Link: https://github.com/joshed-io/reveal-hugo](https://github.com/joshed-io/reveal-hugo)
 
@@ -48,9 +54,9 @@ I will show you how to make interactive slides using `reveal-hugo`!
 
 First, assure you that you follow installation instruction in the [README.md](https://github.com/joshed-io/reveal-hugo).
 
-# Setup
+## Setup
 
-## `hugo.toml`
+### `hugo.toml`
 
 The `hugo.toml` is a file that allow you to configure how your presentation works.
 Some important line that you need to understand. Note that by cloning the GitHub
@@ -93,7 +99,7 @@ An example of how to set `reveal.js` plugins. You give a name, which can be foun
 in the JavaScript of the plugin. [Here, for the chalkboard plugin](https://github.com/rajgoel/reveal.js-plugins/blob/master/chalkboard/plugin.js#L19).
 Then, you give the path to the module CSS and JavaScript. And _voilà_!
 
-# Slide header
+## Slide header
 
 You can give extra-parameters to the slide header. By doing to, you can change theme
 for a specific presentation.
