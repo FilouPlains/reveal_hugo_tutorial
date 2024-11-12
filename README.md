@@ -79,6 +79,9 @@ if the line is not present. Then, if so, do:
 ```bash
 sudo echo "experimental-features = nix-command flakes" >> /etc/nix/nix.conf
 ```
+
+⚠️ Do not forget to close your terminal et reopen it to enable fully nix flakes!
+
 </details>
 
 <details>
@@ -110,6 +113,9 @@ echo "experimental-features = nix-command flakes" >> ~/.config/nix/nix.conf
 > ```bash
 > mkdir ~/.config/nix
 > ```
+
+⚠️ Do not forget to close your terminal et reopen it to enable fully nix flakes!
+
 </details>
 
 #### _🔸 Installing and using `reveal_hugo_tutorial`_
@@ -121,7 +127,7 @@ git clone --recurse-submodules -j8 https://github.com/FilouPlains/reveal_hugo_tu
 cd reveal_hugo_tutorial
 ```
 
-Next, ativate the Nix environment:
+Next, activate the Nix environment:
 
 ```bash
 nix develop ${PWD}/env
@@ -145,3 +151,7 @@ Then open your brower on this next URL to see the “presentation hub”: [http:
 ## 📰 Tutorial
 
 ## 🙇 Acknowledgement
+
+Huge thanks to:
+
+- **Yanna GAUTIER** for testing the conda environment and sending me trajectories!
