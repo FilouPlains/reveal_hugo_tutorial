@@ -150,6 +150,8 @@ Then open your brower on this next URL to see the “presentation hub”: [http:
 
 ## 📰 Tutorial
 
+[👉 Check the markdown version of the tutorial here.](https://github.com/FilouPlains/reveal_hugo_tutorial/blob/main/tutorial.md)
+
 ## 🙇 Acknowledgement
 
 Huge thanks to:

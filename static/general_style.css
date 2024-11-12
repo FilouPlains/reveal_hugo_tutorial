@@ -3,4 +3,5 @@ div.grid {
     width: 100%;
     justify-content: space-around;
     grid-auto-flow: column;
+    align-items: center;
 }
