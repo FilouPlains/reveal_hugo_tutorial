@@ -1,8 +1,8 @@
 @import "/reveal-js/dist/theme/white.css";
 
 :root {
-    --r-main-font: "Roboto Light";
-    --r-heading-font: "Roboto Black";
+    --r-main-font: "Roboto Light", Sans-serif;
+    --r-heading-font: "Roboto Black", Sans-serif;
 }
 
 div.reveal strong,
@@ -10,9 +10,11 @@ div.reveal b div.reveal th {
     font-family: var(--r-heading-font);
 }
 
-.slide-background {
-    background-image: linear-gradient(180deg, #fff 50%, #afafaf 100%);
-}
+/*
+    .slide-background.present {
+        background-image: linear-gradient(180deg, #fff 50%, #afafaf 100%);
+    }
+*/
 
 div.reveal table td,
 div.reveal table th {
