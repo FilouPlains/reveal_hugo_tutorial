@@ -72,6 +72,7 @@ Beautiful, indeed!
 
 QR code parameters:
 
+- **`link=""`**
 - **`size=360`**
 - **`background="#FFF0"`**
 - **`foreground="#000"`**

@@ -126,3 +126,226 @@ For instance, it would look like this: `theme = "white"`.
 2. Give the full path (from the website root) of your custom CSS.
 
 That's it!
+
+## Folder architecture to follow
+
+In the `reveal_hugo_tutorial`, you will have to need the next architecture:
+
+- In `content/`, create a folder named as your wish, that reflects you project.
+  For instance `content/hype_seminar/`. Then, inside this folder, create a file
+  called `_index.md`. In this file, you put your “code” / text for your presentation.
+- In `static/`, create the exact same folder. So here, it would be `static/hype_seminar`.
+  Here, you put all external things to add, like video, images, other HTML file…
+
+## Adding element to the presentation
+
+### Basic markdown element
+
+You can check this web page [https://www.markdownguide.org/basic-syntax/](https://www.markdownguide.org/basic-syntax/)
+in order to check basic Markdown syntax.
+
+There are things which behavior have been changed:
+
+1. Code block using `\`` .
+2. Rules using `---`.
+3. LaTeX equation using \$ or \$\$.
+
+### New slides
+
+To declare a new slide, use `---`.
+
+```md
+# First slide
+
+---
+
+# Second slide
+```
+
+### Scrolling vertically
+
+Add `{{% section %}}{{% /section %}}` arround the slide you want to scroll vertically
+on.
+
+```md
+# Normal slide
+
+---
+
+{{% section %}}
+
+# Vertical slide 1
+
+---
+
+# Vertical slide 2
+
+{{% /section %}}
+
+---
+
+# Normal slide
+```
+
+### QR Code
+
+To insert QR code, use `{{% qr_code %}}`. Parameters, width default values, are:
+
+- **`link=""`**
+- **`size=360`**
+- **`background="#FFF0"`**
+- **`foreground="#000"`**
+
+```md
+{{% qr_code link="https://www.google.com" %}}
+```
+
+#### Classical code block
+### Code block
+
+Use \`\`\` to insert code block. Add the extension to choose a language, like \`\`\`py.
+You can add number to animates lines. For instance, this:
+
+```md
+    ```py{1|2-8|}
+    def toto():
+        return "lol"
+    ```
+```
+
+This will highlight line 1, then line 2 to 8, and then every line.
+
+### Code block from external file
+
+Use `{{% external_code %}}` to add code block. Parameters, with default values,
+are:
+
+- **`language=""`**
+- **`src=""`**
+- **`class=""`**
+- **`show_line=true`**
+
+```md
+{{% external_code language="md" src="./README.md" class="toto" %}}
+```
+
+### Math equation
+
+To type inline equation, like $a = x^2$, do:
+
+```md
+like {{% math inline="a = x^2$" /%}}
+```
+
+And block equation, like:
+
+$$
+\displaystyle\sum_{i = 0}^n i^2
+$$
+
+Do:
+
+```md
+{{% math %}}
+\displaystyle\sum_{i = 0}^n i^2
+{{% /math %}}
+```
+
+### Animation
+
+You can animate using fragment. For instance, this:
+
+```md
+{{% fragment %}} One {{% /fragment %}}
+{{% fragment %}} Two {{% /fragment %}}
+{{% fragment %}} Three {{% /fragment %}}
+```
+
+Will show `One`, `Two`, `Three` gradually.
+
+### Custom properties
+
+You can add custom properties to the current slide. This:
+
+```md
+---
+
+{{% slide background-color="#FF4081" %}}
+
+# Slide
+
+---
+```
+
+Change the current slide background. And that:
+
+```md
+---
+
+{{% slide background-image="./img/yes_we_can.jpg" %}}
+
+# Slide
+
+---
+```
+
+Change the slide picture background.
+
+### Special table design
+
+Doing this:
+
+```md
+| **PDB code** | **Nb atoms** | **Description**     |
+| :----------: | :----------: | :------------------ |
+|     4f8v     |     500      | Nothing…            |
+{class=design}
+```
+
+Will change the table design.
+
+### Alignment
+
+Doing that:
+
+```md
+# Slide
+
+{{% grid %}}
+- Toto
+- Tata
+
+![picture](picture.jpg)
+{{% /grid %}}
+
+---
+```
+
+Will put to left of the slide a list and to the right a picture, like this:
+
+```css
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃          SLIDE           ┃
+┃                          ┃
+┃                          ┃
+┃  - Tata     ▒▒▒▒▒▒▒▒▒    ┃
+┃  - Toto     ▒picture▒    ┃
+┃             ▒▒▒▒▒▒▒▒▒    ┃
+┃                          ┃
+┃                          ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+```
+
+### External `iframe`
+
+Using `{{% iframe %}}`, you can insert iframe to display external content like
+other HTML content. Parameters, with default values, are:
+
+- **`src=""`**
+- **`width="100%"`**
+- **`height="800px"`**
+- **`class=""`**
+
+```md
+{{% iframe src="./molstar/1jli/molstar.html" width="100%" height="800px" %}}
+```
