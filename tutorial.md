@@ -200,7 +200,6 @@ To insert QR code, use `{{% qr_code %}}`. Parameters, width default values, are:
 {{% qr_code link="https://www.google.com" %}}
 ```
 
-#### Classical code block
 ### Code block
 
 Use \`\`\` to insert code block. Add the extension to choose a language, like \`\`\`py.
