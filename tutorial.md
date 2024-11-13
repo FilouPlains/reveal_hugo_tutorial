@@ -324,7 +324,7 @@ Doing that:
 Will put to left of the slide a list and to the right a picture, like this:
 
 ```css
-┏━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┏━━━━━━━━━━━━━━━━━━━━━━━━┓
 ┃          SLIDE           ┃
 ┃                          ┃
 ┃                          ┃
@@ -333,7 +333,7 @@ Will put to left of the slide a list and to the right a picture, like this:
 ┃             ▒▒▒▒▒▒▒▒▒    ┃
 ┃                          ┃
 ┃                          ┃
-┗━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+┗━━━━━━━━━━━━━━━━━━━━━━━━┛
 ```
 
 ### External `iframe`
