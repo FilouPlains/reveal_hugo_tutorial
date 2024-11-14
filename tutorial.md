@@ -6,7 +6,7 @@
 
 ## `reveal.js`
 
-[Link: https://revealjs.com/](https://revealjs.com/)
+- [Link: https://revealjs.com/](https://revealjs.com/)
 
 On their website, they say:
 
@@ -46,7 +46,7 @@ to switch time to time in Markdown… I need something more simple!
 
 ## `reveal-hugo`
 
-[Link: https://github.com/joshed-io/reveal-hugo](https://github.com/joshed-io/reveal-hugo)
+- [Link: https://github.com/joshed-io/reveal-hugo](https://github.com/joshed-io/reveal-hugo)
 
 **Do you believe it?** I write in simple Markdown, and I have a beautiful presentation.
 It is easier than LaTeX, stronger than PowerPoint, and it is free. In this tutorial,
@@ -301,7 +301,8 @@ Doing this:
 {class=design}
 ```
 
-Will change the table design.
+Will change the table design. More precisely, using this method, you can apply CSS
+classes to specific elements.
 
 ### Alignment
 
@@ -323,7 +324,7 @@ Doing that:
 Will put to left of the slide a list and to the right a picture, like this:
 
 ```css
-┏━━━━━━━━━━━━━━━━━━━━━━━━┓
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 ┃          SLIDE           ┃
 ┃                          ┃
 ┃                          ┃
@@ -332,7 +333,7 @@ Will put to left of the slide a list and to the right a picture, like this:
 ┃             ▒▒▒▒▒▒▒▒▒    ┃
 ┃                          ┃
 ┃                          ┃
-┗━━━━━━━━━━━━━━━━━━━━━━━━┛
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 ```
 
 ### External `iframe`
@@ -347,4 +348,86 @@ other HTML content. Parameters, with default values, are:
 
 ```md
 {{% iframe src="./molstar/1jli/molstar.html" width="100%" height="800px" %}}
+```
+
+## CSS
+
+- [Link: https://developer.mozilla.org/fr/docs/Web/CSS](https://developer.mozilla.org/fr/docs/Web/CSS)
+- [Link: https://www.w3schools.com/css/](https://www.w3schools.com/css/)
+
+CSS is a language that allows to change the format / style of a HTML page.
+We are not going to go in depth with it, but we are going here to give some basic
+concepts.
+
+First, use `[Ctrl]+[Shift]+[i]` (or `[C-I]` for vim user :p) to display the developper
+tool of your web browser. With it, you can **inspect** a web page, in order to check
+HTML or CSS element.
+
+In CSS, to modify a HTML tag, like `<p></p>`, you can do:
+
+```css
+p {
+    font-color: red;
+}
+```
+
+Here, all `<p>` tag, which represent a paragraph, will be stylized in red. If you
+want to modify a class, you can do:
+
+```css
+.css-class {
+    font-weight: bold;
+}
+```
+
+Here, all element with the class `css-class`, will be in bold!
+
+## Plotly
+
+- [Link: https://plotly.com/python/](https://plotly.com/python/)
+
+In short, plotly let you made interactive plot! This can be very handy when you
+want to zoom on specific parts. Again, not going in depth with this module. Note
+that it is available in R and JavaScript… The most import code lines, in python,
+that you will need, are these ones:
+
+```py
+figure: Figure = Figure()
+
+figure.write_html(
+    full_html=False,
+    include_plotlyjs="/module/plotly.js/dist/plotly.js",
+    file="plot.html",
+    default_height="100%",
+    default_width="100%",
+)
+```
+
+The first line is just to say that you will need to create a Plotly `Figure` from
+`plotly.graph_objects` to export it in HTML format. Use `.write_html()` to export
+your figure in HTML format, at the end od your script. In order, lines meaning are:
+
+- **`full_html`:** Do you want a full HTML page when exporting? Here, no.
+- **`include_plotlyjs`:** The path to the Plotly JavaScript. Using this repository,
+  you will have to let this given path!
+- **`file`:** The name of the exported file.
+- **`default_height`:** We want Plotly to take full height in its `iframe`.
+- **`default_width`:** We want Plotly to take full width in its `iframe`.
+
+
+## Mol*
+
+- [Link: https://molstar.org/viewer/](https://molstar.org/viewer/)
+
+Again, not going in depth with this. To export a molecule, go to `Plugin State`
+and then click on `Session`. Renamed it `structure.molx`. Now, you will need to
+duplicate, in this repository, the folder `static/tutorial/molstar/1jli` anywhere
+you want in the `static/` folder. Then, rename the copy / pasted directory as your
+whish, like `static/my_molecule/`. To finish, just move `structure.molx` in the
+created directory!
+
+You are now able to display your molecule, like this:
+
+```md
+{{% iframe src="/my_molecule/molstar.html" %}}
 ```
