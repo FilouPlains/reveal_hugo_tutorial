@@ -4,6 +4,44 @@
 
 </div>
 
+## Deep-in in negative points
+
+I do not like people that sell their software or method as the best one. All have pros
+and cons. Here, In this first section, you will find the cons. The pros after. Also,
+it is my POV. So it might change for yours, obviously!
+
+### Cons (in english, not french)
+
+1. **Slides are more heavy.** Logic. You can interact with elements, but they take
+   more time to load…
+2. **Not sharable.** You can do a PDF export, yes. But not share the HTML version. It could
+   be done. But quite tedious for nothing.
+3. **Interactivity is a silent danger.** Wait for me to move that. Wait until that load.
+   Showing something but not talking… BEWARE! Do not let you fool by your own slides! You
+   need to talk to your audience, animate the talk. It is very easy to lost time or let the
+   silent goes in, if you are not enough careful…
+4. **Complex to animate.** You are not in PowerPoint. So no fancy animation, sorry. You can
+   still do amazing stuff using CSS or some reveal.js [transitions](https://revealjs.com/transitions/)
+   and  [animation](https://revealjs.com/auto-animate/). But it is some work, so prepare!
+5. **It is like a LaTeX format.** No drawing or copy-paste here! You make you figure on inkscape,
+   export it `.svg` format, put it in the right folder, then import it… More tedious, but once
+   it is done, more easy to come back, modify things, without losing anything!
+
+### Pros
+
+1. **It is like a LaTeX format.** Wait, what? Indeed, you can use git to keep a track of
+   your work. Reuse picture or figure. Not loosing time on the formatting, but taking
+   care of the content. And, if you modify one title, everything change! Beautiful.
+2. **HTML.** It is beautiful, because you can use GIF, video, PDF, HTML, JavaScript!
+   So no limitation, of, I do know, a specific format of video to insert inside your presentation…
+3. **Stay simple.** By using this, it force you to be more concise and direct with your talk.
+   And for what I have saw, it is not a cons!
+
+## Sumary
+
+I do considere here that there are more cons that pros. But the pros have more weight than
+the cons. And as always, test it and see by yourself!
+
 ## `reveal.js`
 
 - [Link: https://revealjs.com/](https://revealjs.com/)
