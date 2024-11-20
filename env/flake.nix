@@ -42,6 +42,8 @@
                     command+="hugo server --renderStaticToDisk -p 1313;"
 
                     alias serve=$command
+
+                    ./update.sh
                 '';
             };
         };
