@@ -158,4 +158,4 @@ Then open your brower on this next URL to see the “presentation hub”: [http:
 Huge thanks to:
 
 - **Yanna GAUTIER** for testing the conda environment and sending me trajectories!
-- **Jules MARIEN** for testing both the conda and Nix envrionement!
+- **Jules MARIEN** for testing both the conda and Nix environment!
