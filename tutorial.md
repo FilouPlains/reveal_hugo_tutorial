@@ -469,3 +469,19 @@ You are now able to display your molecule, like this:
 ```md
 {{% iframe src="/my_molecule/molstar.html" %}}
 ```
+
+## PDF export
+
+First, change the URL presention from `localhost:1313/presentation_name/#/number`
+to `localhost:1313/presentation_name/?print-pdf`. So for instance, for the tuturial
+presentation, if you have something like `http://localhost:1313/tutorial/#/2`, change
+it to `http://localhost:1313/tutorial/?print-pdf`.
+
+Then, to print it, you need to press `[Ctrl]+[p]`. You need to verify few things:
+
+1. Print to file, like `index.pdf`.
+2. Enable the print of background images and colours.
+3. Disable header and footers.
+4. Change the paper to landscape.
+5. Change the format size to `16:9`. You can create your own setup with the size
+   `114.3 mm` per `203.22mm`.
