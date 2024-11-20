@@ -149,7 +149,7 @@ Use `ln -s source_file link_name_path`
 
 ---
 
-{{% slide background-color="#FF4081" %}}
+{{% slide background-color="rebeccapurple" background-image="none" %}}
 
 # Custom slide 2
 

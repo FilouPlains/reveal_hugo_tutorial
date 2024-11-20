@@ -1,0 +1,42 @@
+@import "/reveal-js/dist/theme/white.css";
+
+:root {
+    --r-main-font: "Roboto Light", Sans-serif;
+    --r-heading-font: "Roboto Black", Sans-serif;
+    --r-link-color: #8A1538;
+}
+
+.reveal h2 {
+    font-family: var(--r-main-font);
+    color: var(--r-link-color);
+    text-align: left;
+    margin-left: 8cm;
+}
+
+div.reveal strong,
+div.reveal b div.reveal th {
+    font-family: var(--r-heading-font);
+}
+
+.reveal section:not(#first-slide) h1 {
+    border-left: 8cm solid var(--r-link-color);
+    border-top-left-radius: 2cm;
+    border-bottom-left-radius: 2cm;
+    text-align: left;
+    margin-bottom: 1em;
+    padding-left: 1cm;
+}
+
+.reveal ul {
+    display: block;
+    margin-left: 11cm;
+    margin-bottom: 1em;
+}
+
+#parcours-resume img {
+    width: 40%;
+}
+
+code.code-python {
+    height: 50cm;
+}

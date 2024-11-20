@@ -10,11 +10,15 @@ div.reveal b div.reveal th {
     font-family: var(--r-heading-font);
 }
 
-/*
-    .slide-background.present {
-        background-image: linear-gradient(180deg, #fff 50%, #afafaf 100%);
-    }
-*/
+
+.slide-background-content {
+    background-image: linear-gradient(180deg, #fff 50%, #afafaf 100%);
+}
+
+.reveal .slide-background-content {
+    border: solid 20px rebeccapurple;
+    box-sizing: border-box;
+}
 
 div.reveal table td,
 div.reveal table th {
