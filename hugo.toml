@@ -27,17 +27,17 @@ block = true
 
 [[params.reveal_hugo.plugins]]
 name = "RevealChalkboard"
-source = "module/reveal.js-plugins/chalkboard/plugin.js"
-css = "module/reveal.js-plugins/chalkboard/style.css"
+source = "module/RevealPlugins/Chalkboard/script.js"
+css = "module/RevealPlugins/Chalkboard/style.css"
 
 [[params.reveal_hugo.plugins]]
 name = "RevealCustomControls"
-source = "module/reveal.js-plugins/customcontrols/plugin.js"
-css = "module/reveal.js-plugins/customcontrols/style.css"
+source = "module/RevealPlugins/CustomControl/script.js"
+css = "module/RevealPlugins/CustomControl/style.css"
 
 [[params.reveal_hugo.plugins]]
 name = "Externalcode"
-source = "module/reveal.js-external-code/externalcode.js"
+source = "module/RevealPlugins/RevealExternalCode/script.js"
 
 [[params.reveal_hugo.plugins]]
 name = "RevealHighlight"

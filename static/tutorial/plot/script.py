@@ -63,7 +63,7 @@ if __name__ == "__main__":
 
     plot.write_html(
         full_html=False,
-        include_plotlyjs="/module/plotly.js/dist/plotly.js",
+        include_plotlyjs="/module/Plotly/script.js",
         file="plot.html",
         default_height="100%",
         default_width="100%",
