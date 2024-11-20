@@ -80,7 +80,7 @@ if the line is not present. Then, if so, do:
 sudo echo "experimental-features = nix-command flakes" >> /etc/nix/nix.conf
 ```
 
-⚠️ Do not forget to close your terminal et reopen it to enable fully nix flakes!
+**⚠️ Do not forget to close your terminal et reopen it to enable fully nix flakes!**
 
 </details>
 
@@ -114,7 +114,7 @@ echo "experimental-features = nix-command flakes" >> ~/.config/nix/nix.conf
 > mkdir ~/.config/nix
 > ```
 
-⚠️ Do not forget to close your terminal et reopen it to enable fully nix flakes!
+**⚠️ Do not forget to close your terminal et reopen it to enable fully nix flakes!**
 
 </details>
 
@@ -130,7 +130,8 @@ cd reveal_hugo_tutorial
 Next, activate the Nix environment:
 
 ```bash
-nix develop ${PWD}/env
+cd env/
+nix develop
 ```
 
 You are now technically abble to launch the presentation! To do so:
@@ -157,3 +158,4 @@ Then open your brower on this next URL to see the “presentation hub”: [http:
 Huge thanks to:
 
 - **Yanna GAUTIER** for testing the conda environment and sending me trajectories!
+- **Jules MARIEN** for testing both the conda and Nix envrionement!
