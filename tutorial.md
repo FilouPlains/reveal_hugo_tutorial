@@ -36,15 +36,15 @@ it is my POV. So it might change for yours, obviously!
    So no limitation, of, I do know, a specific format of video to insert inside your presentation…
 3. **Stay simple.** By using this, it force you to be more concise and direct with your talk.
    And for what I have saw, it is not a cons!
-
-## Sumary
-
-I do considere here that there are more cons that pros. But the pros have more weight than
-the cons. And as always, test it and see by yourself!
+4. **Customization.** You can customize a lot of things!
+5. **Cool shortcut.** There are some shortcuts that are present and allow you to do more things
+   than in a ”classical” presentation.
 
 ## `reveal.js`
 
 - [Link: https://revealjs.com/](https://revealjs.com/)
+
+**‼️ Check their website to have a demo of all the possibilities using `reveal.js`!** 
 
 On their website, they say:
 
@@ -485,3 +485,14 @@ Then, to print it, you need to press `[Ctrl]+[p]`. You need to verify few things
 4. Change the paper to landscape.
 5. Change the format size to `16:9`. You can create your own setup with the size
    `114.3 mm` per `203.22mm`.
+
+## Shortcut
+
+List of some interesting shortcut:
+
+- **[Escape] or [o]:** **O**verview mode.
+- **[v]:** Resume the presentation by putting a black screen.
+- **[s]:** **S**peaker view, see time, next slides and notes! Beware that if slides are
+  too heavy, it will not work…
+- **[g]:** **G**o to slide. Input a number, go to equivalent slide!
+- **[f]** **F**ull screen mode.
