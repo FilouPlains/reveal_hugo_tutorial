@@ -165,3 +165,4 @@ Huge thanks to:
 
 - **Yanna GAUTIER** for testing the conda environment and sending me trajectories!
 - **Jules MARIEN** for testing both the conda and Nix environment!
+- **Pierre POULAIN** for his comments on the tutorial.
