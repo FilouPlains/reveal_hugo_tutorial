@@ -134,6 +134,12 @@ cd env/
 nix develop
 ```
 
+Or:
+
+```bash
+nix develop ${PWD}/env
+```
+
 You are now technically abble to launch the presentation! To do so:
 
 ```bash
