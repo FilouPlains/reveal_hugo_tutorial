@@ -29,8 +29,6 @@
 
                 packages = with pkgs; [
                     inputs.hugo.legacyPackages.${system}.hugo
-                    git
-                    wget
                     inputs.python.legacyPackages.${system}.python312
                     inputs.plotly.legacyPackages.${system}.python312Packages.plotly
                     inputs.numpy.legacyPackages.${system}.python312Packages.numpy_2
