@@ -42,17 +42,6 @@
                     command+="hugo server --renderStaticToDisk -p 1313;"
 
                     alias serve=$command
-
-                    # Command to launch when use is in `reveal_hugo_tutorial/env/`.
-                    if [[ "$(basename "$PWD")" == "env" ]];then
-                        ./update.sh
-                        cd ..
-                    # Command to launch when use is in `reveal_hugo_tutorial/`.
-                    elif [[ "$(basename "$PWD")" == "reveal_hugo_tutorial" ]];then
-                        cd env/
-                        ./update.sh
-                        cd ..
-                    fi
                 '';
             };
         };
