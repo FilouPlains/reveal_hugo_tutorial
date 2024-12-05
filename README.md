@@ -26,58 +26,43 @@ you will not need to install them all.
 
 ### 🐍 Using conda
 
-First, clone this repository:
+You will need [miniconda](https://docs.anaconda.com/miniconda/) to proceed to the installation.
 
 ```bash
+# Clone this repository.
 git clone --recurse-submodules -j8 https://github.com/FilouPlains/reveal_hugo_tutorial.git
 cd reveal_hugo_tutorial
-```
 
-Then, using [conda](https://www.anaconda.com/download) or [miniconda](https://docs.anaconda.com/miniconda/),
-install `Hugo` and `Plotly` like this:
-
-```bash
+# Install Hugo and Plotly using miniconda.
 conda env create -f env/environment.yml
-```
 
-Next, ativate the conda environment:
-
-```bash
+# Activate the conda environment.
 conda activate reveal-hugo
-```
 
-You are now technically abble to launch the presentation! To do so:
-
-```bash
+# Launch the presentation.
 hugo server --renderStaticToDisk -p 1313
 ```
 
-To finish, go, using your favorite web navigator (like Mozilla Firefox 😉) on this
-next URL to see the “presentation hub”: [http://localhost:1313/](http://localhost:1313/).
+When the presentation is running, go, using your favorite web navigator (like Mozilla Firefox 😉),
+on this next URL to see the “presentation hub”: [http://localhost:1313/](http://localhost:1313/).
 
 ### 📹 Using Nix
 
 <details>
 <summary><h4><em>🔸 Installing Nix for multi-user</em></h4></summary>
 
-Download [Nix](https://nixos.org/download/) using this command:
+Download [Nix](https://nixos.org/download/) and set it up like that:
 
 ```bash
 # Multi-user installation.
 sh <(curl -L https://nixos.org/nix/install) --daemon
-```
 
-Next, enable `flakes`. To do so, add this:
-
-```nix
-experimental-features = nix-command flakes
-```
-
-To the `/etc/nix/nix.conf` file. One example to do so is to `cat` the file to check
-if the line is not present. Then, if so, do:
-
-```bash
-sudo echo "experimental-features = nix-command flakes" >> /etc/nix/nix.conf
+# Enable `flakes` by adding `experimental-features = nix-command flakes` to
+# `/etc/nix/nix.conf`.
+grep --quiet "flakes" /etc/nix/nix.conf \   
+    && echo "Flakes already enable." \   
+    || echo "experimental-features = nix-command flakes" \  
+    | sudo tee --append /etc/nix/nix.conf > /dev/null
 ```
 
 **⚠️ Do not forget to close your terminal et reopen it to enable fully nix flakes!**
@@ -87,31 +72,24 @@ sudo echo "experimental-features = nix-command flakes" >> /etc/nix/nix.conf
 <details>
 <summary><h4><em>🔸 Installing nix for single user</em></h4></summary>
 
-Download [Nix](https://nixos.org/download/) using this command:
+Download [Nix](https://nixos.org/download/) and set it up like that:
 
 ```bash
-# Or you can do a single-user installation:
+# Single-user installation.
 sh <(curl -L https://nixos.org/nix/install) --no-daemon
-```
 
-Next, enable `flakes`. To do so, add this:
-
-```nix
-experimental-features = nix-command flakes
-```
-
-To the `~/.config/nix/nix.conf` file. One example to do so is to `cat` the file to check
-if the line is not present. Then, if so, do:
-
-```bash
-echo "experimental-features = nix-command flakes" >> ~/.config/nix/nix.conf
+# Enable `flakes` by adding `experimental-features = nix-command flakes` to
+# `/etc/nix/nix.conf`.
+grep --quiet "flakes" ~/.config/nix/nix.conf \   
+    && echo "Flakes already enable." \   
+    || echo "experimental-features = nix-command flakes" >> ~/.config/nix/nix.conf
 ```
 
 > **Note**
 >
 > You might have to create the `nix/` folder in `.config/` using:
 > ```bash
-> mkdir ~/.config/nix
+> mkdir --parents ~/.config/nix
 > ```
 
 **⚠️ Do not forget to close your terminal et reopen it to enable fully nix flakes!**
@@ -120,40 +98,35 @@ echo "experimental-features = nix-command flakes" >> ~/.config/nix/nix.conf
 
 #### _🔸 Installing and using `reveal_hugo_tutorial`_
 
-First, clone this repository:
-
 ```bash
+# Clone this repository.
 git clone --recurse-submodules -j8 https://github.com/FilouPlains/reveal_hugo_tutorial.git
 cd reveal_hugo_tutorial
-```
 
-Next, activate the Nix environment:
-
-```bash
-cd env/
-nix develop
-```
-
-Or:
-
-```bash
+# Activate the Nix environment.
 nix develop ${PWD}/env
-```
 
-You are now technically abble to launch the presentation! To do so:
+### # Or you can do:
+### cd env/
+### nix develop
 
-```bash
+# Launch the presentation.
 serve
 ```
 
-This is an alias create when activating the Nix environment. Basically it launch
-this command:
+The last command is an alias create when activating the Nix environment. Basically it launch
+these commands:
 
 ```bash
+# Open your brower to see the “presentation hub”.
+xdg-open http://localhost:1313/
+# Launch the presentation
 hugo server --renderStaticToDisk -p 1313
 ```
 
-Then open your brower on this next URL to see the “presentation hub”: [http://localhost:1313/](http://localhost:1313/).
+If your browser load to quick, wait that hugo is fully launch and refresh the page. If the
+browser does not open correctly, open manually your brower and go to this next URL to see
+the “presentation hub”: [http://localhost:1313/](http://localhost:1313/).
 
 ## 📰 Tutorial
 
