@@ -59,6 +59,7 @@ Download [Nix](https://nixos.org/download/) and set it up like that for multi-us
 sh <(curl -L https://nixos.org/nix/install) --daemon
 ```
 
+> [!NOTE]  
 > You can also enable it for single user like that:
 >
 > ```bash
@@ -88,7 +89,8 @@ grep --quiet "flakes" ~/.config/nix/nix.conf \
 <details>
 <summary><h4>🔸 Installing and using `reveal_hugo_tutorial`</h4></summary>
 
-**⚠️ Do not forget to close your terminal et reopen it to enable fully nix!**
+> [!WARNING]  
+> Do not forget to close your terminal et reopen it to enable fully nix!
 
 ```bash
 # Clone this repository.
@@ -106,6 +108,7 @@ nix develop ${PWD}/env
 serve
 ```
 
+> [!NOTE]  
 > The last command is an alias create when activating the Nix environment. Basically it launch
 > these commands:
 > 
