@@ -1,3 +1,29 @@
+<details>
+  <summary>🚀 Click to expand</summary>
+
+  <div class="markdown-alert note">
+    <strong>NOTE:</strong> Highlights information that users should take into account, even when skimming.
+  </div>
+
+  <div class="markdown-alert tip">
+    <strong>TIP:</strong> Optional information to help a user be more successful.
+  </div>
+
+  <div class="markdown-alert important">
+    <strong>IMPORTANT:</strong> Crucial information necessary for users to succeed.
+  </div>
+
+  <div class="markdown-alert warning">
+    <strong>WARNING:</strong> Critical content demanding immediate user attention due to potential risks.
+  </div>
+
+  <div class="markdown-alert caution">
+    <strong>CAUTION:</strong> Negative potential consequences of an action.
+  </div>
+
+</details>
+
+
 <div align="center">
 
 # 🦙 reveal_hugo_tutorial ⚡
