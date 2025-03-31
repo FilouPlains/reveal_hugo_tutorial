@@ -1,29 +1,3 @@
-<details>
-  <summary>🚀 Click to expand</summary>
-
-  <div class="markdown-alert note">
-    <strong>NOTE:</strong> Highlights information that users should take into account, even when skimming.
-  </div>
-
-  <div class="markdown-alert tip">
-    <strong>TIP:</strong> Optional information to help a user be more successful.
-  </div>
-
-  <div class="markdown-alert important">
-    <strong>IMPORTANT:</strong> Crucial information necessary for users to succeed.
-  </div>
-
-  <div class="markdown-alert warning">
-    <strong>WARNING:</strong> Critical content demanding immediate user attention due to potential risks.
-  </div>
-
-  <div class="markdown-alert caution">
-    <strong>CAUTION:</strong> Negative potential consequences of an action.
-  </div>
-
-</details>
-
-
 <div align="center">
 
 # 🦙 reveal_hugo_tutorial ⚡
@@ -85,7 +59,8 @@ Download [Nix](https://nixos.org/download/) and set it up like that for multi-us
 sh <(curl -L https://nixos.org/nix/install) --daemon
 ```
 
-> [!NOTE]  
+> **📝 Note**
+> 
 > You can also enable it for single user like that:
 >
 > ```bash
@@ -115,7 +90,8 @@ grep --quiet "flakes" ~/.config/nix/nix.conf \
 <details>
 <summary><h4>🔸 Installing and using `reveal_hugo_tutorial`</h4></summary>
 
-> [!WARNING]  
+> **⚠️ Warning**
+> 
 > Do not forget to close your terminal et reopen it to enable fully nix!
 
 ```bash
@@ -134,7 +110,8 @@ nix develop ${PWD}/env
 serve
 ```
 
-> [!NOTE]  
+> **📝 Note**
+> 
 > The last command is an alias create when activating the Nix environment. Basically it launch
 > these commands:
 > 
