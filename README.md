@@ -13,20 +13,20 @@
 ## 🌳 Module used
 
 Here is a list of the module used to make this tutorial. By cloning this repository,
-you will not need to install them all.
+you will not need to install them all:
 
--   [Hugo](https://gohugo.io/)
--   [reveal.js](https://revealjs.com/)
--   [reveal-hugo](https://github.com/joshed-io/reveal-hugo)
--   [Molstar](https://molstar.org/)
--   [qrcodejs](https://davidshimjs.github.io/qrcodejs/)
--   [plotly.js](https://plotly.com/)
+|                                                         |                                                     |
+| :-----------------------------------------------------: | :-------------------------------------------------: |
+|               [Hugo](https://gohugo.io/)                |           [Molstar](https://molstar.org/)           |
+|           [reveal.js](https://revealjs.com/)            | [qrcodejs](https://davidshimjs.github.io/qrcodejs/) |
+| [reveal-hugo](https://github.com/joshed-io/reveal-hugo) |          [plotly.js](https://plotly.com/)           |
 
 ## 🌐 Installation
 
-### 🐍 Using conda
+<details>
+<summary><h3>🐍 Using conda</h3></summary>
 
-You will need [miniconda](https://docs.anaconda.com/miniconda/) to proceed to the installation.
+You will need [miniconda](https://docs.anaconda.com/miniconda/) to proceed to the next installation:
 
 ```bash
 # Clone this repository.
@@ -43,40 +43,38 @@ conda activate reveal-hugo
 hugo server --renderStaticToDisk -p 1313
 ```
 
-When the presentation is running, go, using your favorite web navigator (like Mozilla Firefox 😉),
+When the presentation is running, go, using your favorite web navigator,
 on this next URL to see the “presentation hub”: [http://localhost:1313/](http://localhost:1313/).
-
-### 📹 Using Nix
+</details>
 
 <details>
-<summary><h4><em>🔸 Installing Nix for multi-user</em></h4></summary>
+<summary><h3>📹 Using Nix</h3></summary>
 
-Download [Nix](https://nixos.org/download/) and set it up like that:
+<details>
+<summary><h4>🔸 Installing Nix for multi-user</h4></summary>
+
+Download [Nix](https://nixos.org/download/) and set it up like that for multi-user:
 
 ```bash
-# Multi-user installation.
 sh <(curl -L https://nixos.org/nix/install) --daemon
-
-# Enable `flakes` by adding `experimental-features = nix-command flakes` to
-# `/etc/nix/nix.conf`.
-grep --quiet "flakes" /etc/nix/nix.conf \   
-    && echo "Flakes already enable." \   
-    || echo "experimental-features = nix-command flakes" \  
-    | sudo tee --append /etc/nix/nix.conf > /dev/null
 ```
 
-**⚠️ Do not forget to close your terminal et reopen it to enable fully nix flakes!**
+> You can also enable it for single user like that:
+>
+> ```bash
+> sh <(curl -L https://nixos.org/nix/install) --no-daemon
+> ```
 
 </details>
 
 <details>
-<summary><h4><em>🔸 Installing nix for single user</em></h4></summary>
+<summary><h4>🔸 Enabling `flakes` and `nix-command`</h4></summary>
 
-Download [Nix](https://nixos.org/download/) and set it up like that:
+To enable `flakes` and `nix-command`, you can launch these commands:
 
 ```bash
-# Single-user installation.
-sh <(curl -L https://nixos.org/nix/install) --no-daemon
+# Create nix config directory.
+mkdir --parents ~/.config/nix
 
 # Enable `flakes` by adding `experimental-features = nix-command flakes` to
 # `/etc/nix/nix.conf`.
@@ -85,18 +83,12 @@ grep --quiet "flakes" ~/.config/nix/nix.conf \
     || echo "experimental-features = nix-command flakes" >> ~/.config/nix/nix.conf
 ```
 
-> **Note**
->
-> You might have to create the `nix/` folder in `.config/` using:
-> ```bash
-> mkdir --parents ~/.config/nix
-> ```
-
-**⚠️ Do not forget to close your terminal et reopen it to enable fully nix flakes!**
-
 </details>
 
-#### _🔸 Installing and using `reveal_hugo_tutorial`_
+<details>
+<summary><h4>🔸 Installing and using `reveal_hugo_tutorial`</h4></summary>
+
+**⚠️ Do not forget to close your terminal et reopen it to enable fully nix!**
 
 ```bash
 # Clone this repository.
@@ -114,19 +106,22 @@ nix develop ${PWD}/env
 serve
 ```
 
-The last command is an alias create when activating the Nix environment. Basically it launch
-these commands:
-
-```bash
-# Open your brower to see the “presentation hub”.
-xdg-open http://localhost:1313/
-# Launch the presentation
-hugo server --renderStaticToDisk -p 1313
-```
+> The last command is an alias create when activating the Nix environment. Basically it launch
+> these commands:
+> 
+> ```bash
+> # Open your brower to see the “presentation hub”.
+> xdg-open http://localhost:1313/
+> # Launch the presentation
+> hugo server --renderStaticToDisk -p 1313
+> ```
 
 If your browser load to quick, wait that hugo is fully launch and refresh the page. If the
 browser does not open correctly, open manually your brower and go to this next URL to see
 the “presentation hub”: [http://localhost:1313/](http://localhost:1313/).
+
+</details>
+</details>
 
 ## 📰 Tutorial
 
