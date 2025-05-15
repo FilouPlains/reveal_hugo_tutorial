@@ -1,3 +1,4 @@
 [submodule "themes/reveal-hugo"]
 	path = themes/reveal-hugo
 	url = https://github.com/FilouPlains/reveal-hugo.git
+	branch = filouplains-offline-mermaid-mathjax

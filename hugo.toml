@@ -17,6 +17,8 @@ width = 1920
 height = 1080
 chalkboard = { theme = "whiteboard" }
 customcontrols = { controls = [ { icon = "<i class=\"fa fa-pen-square\"></i>", title = "Toggle chalkboard(B)", action = "RevealChalkboard.toggleChalkboard();" }, { icon = "<i class=\"fa fa-pen\"></i>", title = "Toggle notes canvas (C)", action = "RevealChalkboard.toggleNotesCanvas();" } ] }
+mathjax_cdn = "/module/Mathjax/script.js"
+mermaid_cdn = "/module/Mermaid/script.js"
 
 [markup.highlight]
 codeFences = false
