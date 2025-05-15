@@ -25,10 +25,10 @@ wget --output-document='Mathjax/script.js' 'https://raw.githubusercontent.com/ma
 wget --output-document='Mermaid/script.js' 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js'
 
 # PlotlyJs
-wget --output-document='https://raw.githubusercontent.com/plotly/plotly.js/refs/heads/master/dist/plotly.min.js'
+wget --output-document='PlotlyJs/script.js' 'https://raw.githubusercontent.com/plotly/plotly.js/refs/heads/master/dist/plotly.min.js'
 
 # QrCodeJs
-wget --output-document='https://raw.githubusercontent.com/davidshimjs/qrcodejs/refs/heads/master/qrcode.min.js'
+wget --output-document='QrCodeJs.script.js' 'https://raw.githubusercontent.com/davidshimjs/qrcodejs/refs/heads/master/qrcode.min.js'
 
 # RevealPlugins/Chalkboard
 wget --output-document='RevealPlugins/Chalkboard/script.js' 'https://raw.githubusercontent.com/rajgoel/reveal.js-plugins/refs/heads/master/chalkboard/plugin.js'
