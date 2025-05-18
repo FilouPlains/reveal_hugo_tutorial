@@ -48,7 +48,7 @@ on this next URL to see the “presentation hub”: [http://localhost:1313/](htt
 </details>
 
 <details>
-<summary><h3>📹 Using Nix</h3></summary>
+<summary><h3>❄️ Using Nix</h3></summary>
 
 <details>
 <summary><h4>🔸 Installing Nix for multi-user</h4></summary>
