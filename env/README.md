@@ -16,5 +16,5 @@ conda env create -f environment.yml
 
 | **Package** | **Version** |                    **Description**                    |
 | :---------: | :---------: | :---------------------------------------------------: |
-|  **Hugo**   |  `0.123.7`  | To produce the `.html` presentation from `.md` files. |
+|  **Hugo**   |  `0.135.0`  | To produce the `.html` presentation from `.md` files. |
 | **Plotly**  |  `5.24.1`   |       To produce interactive in `.html` format.       |
