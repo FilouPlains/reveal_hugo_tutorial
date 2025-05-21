@@ -307,7 +307,7 @@ You can add custom properties to the current slide. This:
 ```md
 ---
 
-{{% slide background-color="#FF4081" %}}
+{{% slide background-color="#FF4081" background-image="none" %}}
 
 # Slide
 
